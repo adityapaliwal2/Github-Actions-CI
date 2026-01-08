@@ -10,7 +10,7 @@ backend:
     image:
       repository: adityapaliwal1/todo-backend
       pullPolicy: IfNotPresent
-      tag: feat-f1-b3b13dd
+      tag: feat-f1-acdbc21
     port: 3000
   service:
     name: backend-service
