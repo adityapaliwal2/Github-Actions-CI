@@ -3,7 +3,7 @@ name: Build Image & Update Helm Values
 on:
   push:
     branches:
-      - "feat/*"   # Run CI only for any push on feat/* branches
+      - "feat/**"
 
 jobs:
   build-push-update:
