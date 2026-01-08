@@ -3,7 +3,7 @@ name: Build Image & Update Helm Values
 on:
   push:
     branches:
-      - "**"
+      - "feat/*"
 
 jobs:
   build-push-update:
