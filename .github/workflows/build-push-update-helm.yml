@@ -60,7 +60,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-            -t ${{ secrets.DOCKERHUB_USERNAME }}/todo-backend:${IMAGE_TAG} \
+            -t ${{ secrets.DOCKERHUB_USERNAME }}/todo-backend:${IMAGE_TAG} .
 
       - name: Push Docker image
         run: |
