@@ -10,12 +10,13 @@ backend:
     image:
       repository: adityapaliwal1/todo-backend
       pullPolicy: IfNotPresent
+      tag: feat-f1-b3b13dd
     port: 3000
   service:
     name: backend-service
     type: NodePort
     port: 3000
-    targetport: 3000  
+    targetport: 3000
     nodeport: 30080
   config:
     name: backend-config
@@ -26,7 +27,6 @@ backend:
     user: cG9zdGdyZXM=
     password: cG9zdGdyZXMxMjM=
     database: dG9kb2xpc3Q=
-
 postgres:
   enabled: true
   mode:
@@ -48,12 +48,10 @@ postgres:
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
-    size: 1Gi  
+    size: 1Gi
   auth:
-   name: db-secret
-   username: cG9zdGdyZXM=
-   password: cG9zdGdyZXMxMjM=
-   database: dG9kb2xpc3Q=
+    name: db-secret
+    username: cG9zdGdyZXM=
+    password: cG9zdGdyZXMxMjM=
+    database: dG9kb2xpc3Q=
 resources: {}
-
-
