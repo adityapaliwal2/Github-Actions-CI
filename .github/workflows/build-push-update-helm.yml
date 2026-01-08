@@ -4,13 +4,9 @@ on:
   push:
     branches:
       - "feat/*"
-    paths:
-      - Dockerfile
-      - "**/*"
   push:
     paths:
-      - Dockerfile
-
+      - "Dockerfile"
 jobs:
   build-push-update:
     runs-on: ubuntu-latest
