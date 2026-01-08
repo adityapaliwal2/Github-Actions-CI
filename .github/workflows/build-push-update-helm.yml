@@ -1,5 +1,8 @@
 name: Build Image & Update Helm Values
 
+permissions:
+  contents: write 
+  
 on:
   push:
     branches:
